@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Register</title>
+{% endblock %}
+
+{% block content %}
+<form action="#" method="POST">
+    <table cellpadding="10px">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="Name" /></td>
+        </tr>
+        <tr>
+            <td>Contact Number:</td>
+            <td><input type="text" name="Num" /></td>
+        </tr>
+        <tr>
+            <td>Year:</td>
+            <td><input type="radio" id="SY" name="Year" value="SY">
+                <label for="html">SY</label>
+                <input type="radio" id="TY" name="Year" value="TY">
+                <label for="css">TY</label></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit Data" /></td>
+        </tr>
+    </table>
+</form>
+{% endblock %}
